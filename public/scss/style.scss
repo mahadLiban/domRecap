@@ -1,0 +1,53 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.square{
+    height: 180px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .littleSquare{
+        background-color: red;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+button{
+    border: none;
+    margin: 0 5px;
+}
+
+.calculette{
+    display: inline-block;
+    background-color: black;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    #ecran{
+        width: 80%;
+        height: 35px;
+    }
+    .touches{
+        display: grid;
+        grid-template-columns: repeat(4, 40px);
+        grid-template-rows: repeat(4, 40px);
+        grid-gap: 20px;   
+    }
+    .bouton{
+        border : none;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+}
+
+.todoItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

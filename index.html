@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap JS</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <section class="container  mt-5">
+        <h1 class=" text-white text-center bg-primary py-3">Javascript DOM</h1>
+
+        <ul class="nav nav-pills mb-3 d-flex justify-content-around text-white mt-5 text-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-exo1-tab" data-bs-toggle="pill" data-bs-target="#pills-exo1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Exercice 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-exo2-tab" data-bs-toggle="pill" data-bs-target="#pills-exo2" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Exercice 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-exo3-tab" data-bs-toggle="pill" data-bs-target="#pills-exo3" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Exercice 3</button>
+            </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-exo4-tab" data-bs-toggle="pill" data-bs-target="#pills-exo4" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Exercice 4</button>
+            </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-exo5-tab" data-bs-toggle="pill" data-bs-target="#pills-exo5" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Exercice 5</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-exo6-tab" data-bs-toggle="pill" data-bs-target="#pills-exo6" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Exercice 6</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-exo7-tab" data-bs-toggle="pill" data-bs-target="#pills-exo7" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Exercice 7</button>
+            </li>
+        </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-exo1" role="tabpanel" aria-labelledby="pills-exo1-tab">
+                <div class="bg-secondary  ">
+                    <div class="container p-5">
+                        <h2>Ceci est un h2</h2>
+                        <p>list de propriétés méthodes à retrouver dans la documentation</p>
+                        <ul>
+                            <li>innerText</li>
+                            <li>innerHTML</li>
+                            <li>querySelector()</li>
+                            <li>querySelectorAll()</li>
+                            <li>style</li>
+                            <li>classList</li>
+                        </ul>
+                        <p>Changer le contenu du h2 par "Titre modifié"</p>
+                        <p>Changer la couleur du h2 ( la couleur que vous voulez</p>
+                        <p>Ajouter une class background bootstarp au h2</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-exo2" role="tabpanel" aria-labelledby="pills-exo2-tab">
+                <div class="bg-secondary">
+                    <p class="p-5">Mettre un écouteur d'évenements sur le boutons nav et changer le panel en conséquence.</p>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-exo3" role="tabpanel" aria-labelledby="pills-exo3-tab">
+                <div class="bg-secondary p-5">
+                    <h2>Welcome <span id="inconnu">Inconnu</span></h2>
+                    <p>Ecrivez dans l'imput ci-dessous le nom de la personne que vous souhaitez acceuillir</p>
+                    <p>lorsque vous appuyez sur le bouton "go" le nom que vous avez ajouté dans l'input sera alors mit dans le span du h2 et l'input sera alors vidé de son contenu. Attention interdiction de toucher à l'HTML</p>
+                    <form>
+                        <input type="text" id="inputExo3">
+                        <button type="button" class="btn-light" id="btnExo3">go</button>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-exo4" role="tabpanel" aria-labelledby="pills-exo4-tab">
+                <div class="bg-secondary p-5">
+                    <h2>Déplacer les éléments</h2>
+                    <div class="d-flex justify-content-between">
+                        <div class="square bg-primary">
+                            <div class="littleSquare"></div>
+                        </div>
+                        <div class="square bg-primary"></div>
+                    </div>
+                    <div class="container-fluid d-flex flex-column align-items-center">
+                        <button type="button" id="btnJaune" class="mx-auto btn btn-warning text-light mt-5 mb-3">Change place</button>
+                        <button type="button"  class="btn btn-success">Nombre de click <span id="compteurClick">0</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-exo5" role="tabpanel" aria-labelledby="pills-exo5-tab">
+                <div class="bg-secondary container p-5" id="containerOeuf">
+                    <h2>Générer des éléments du DOM </h2>
+                    <p>click sur le bouton ci-dessous pour générer des oeufs</p>
+                    <button type="button" id="btnOeuf" class="btn btn-success">Ajouter un oeuf</button>
+                    <br>
+                
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-exo6" role="tabpanel" aria-labelledby="pills-exo6-tab">
+                <div class="bg-secondary p-5">
+                    <h2>Création calculatrice</h2>
+                    <h3>niveau 1</h3>
+                    <input type="number" id="inputCalc1">
+                    <span id="plusLvl1">+</span>
+                    <input type="number" id="inputCalc2">
+                    <button id="egalLvl1">=</button>
+                    <span id="answerLvl1">?</span>
+                    <h3>niveau 2</h3>
+                    <div class="calculette">
+                        <p class="text-light" id="reponse">?</p>
+                        <input id="ecran" type="text" class="mb-3">
+                        <div class="touches">
+                            <button data-key="97" class="bouton">1</button>
+                            <button data-key="98" class="bouton">2</button>
+                            <button data-key="99" class="bouton">3</button>
+                            <button data-key="107" class="bouton bg-primary text-white">+</button>
+                            <button data-key="100" class="bouton">4</button>
+                            <button data-key="101" class="bouton">5</button>
+                            <button data-key="102" class="bouton">6</button>
+                            <button data-key="109" class="bouton bg-primary text-white">-</button>
+                            <button data-key="103" class="bouton">7</button>
+                            <button data-key="104" class="bouton">8</button>
+                            <button data-key="105" class="bouton">9</button>
+                            <button data-key="106" class="bouton bg-primary text-white">*</button>
+                            <button data-key="8" class="bouton bg-danger text-white">C</button>
+                            <button data-key="96" class="bouton">0</button>
+                            <button data-key="13" class="bouton bg-success text-white">=</button>
+                            <button data-key="111" class="bouton bg-primary text-white">/</button>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-exo7" role="tabpanel" aria-labelledby="pills-exo7-tab">
+                <div class="bg-secondary p-5">
+                    <h2 class="border-bottom border-dark">ToDoList</h2>
+                    <div class="mb-3 containerTodo">
+                        <label for="exampleInputEmail1" class="form-label"></label>
+                        <input placeholder="Que dois-je faire ?" type="email" class="form-control" id="inputTodo" aria-describedby="emailHelp">
+                        <div class="text-center m-3">
+                            <button id="btnToutes" type="button" class="border btn btn-success">Toutes</button>
+                            <button id="btnComplete" type="button" class="border btn btn-success">Completées</button>
+                            <button id="btnTodo" type="button" class="border btn btn-success">A faire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Nav tabs -->
+
+  
+  <!-- Tab panes -->
+
+          <!-- 2 eme 3 -->
+          
+
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script type="application/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="module" src="./public/js/main.js"></script>
+</body>
+</html>
